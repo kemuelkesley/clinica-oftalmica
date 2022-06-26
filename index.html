@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>otica</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+      <nav class="navbar-dark bg-dark ">
+        <div class="container-fluid navbar">
+          <a class="navbar-brand brand" href="#">
+            <img calss="img__logo" src="./img/logo.svg" width="130px" height="50px" alt="logo da empresa" class="d-inline-block align-text-top">
+            <br>
+            <p class="version">Ver-1.1</p>
+          </a>
+        </div>
+      </nav>
+    
+  <div class="container mb-5">
+     <p class="sub__title">Receita Oftálmica</p>
+  </div>
+      
+  <div class="container container-bord largura-div">
+      <div class="shadow-lg p-3 mb-5 bg-white rounded container-bord">
+          <div class="form-row">
+              <div class="col">
+                  <p>Insira abaixo o seu grau esférico</p>  
+                  <label for="esferico__esquerdo" class="font__label">Grau esférico do olho esquerdo</label>
+                  <input type="number" class="form-control largura__input" id="esferico__esquerdo" name="esferico__esquerdo" placeholder="Digite o número do seu grau esférico">
+              </div><br>
+              <div class="">
+                  <label for="esferico__direito" class="font__label">Grau esférico do olho direito</label>
+                  <input type="number" class="form-control largura__input" id="esferico__direito" name="esferico__direito" placeholder="Digite o número do seu grau esférico">
+              </div>
+          </div>
+
+          <div class="form-row">
+              <div class="col">
+                  <p>Insira abaixo o seu grau cilíndrico</p>
+                  <label for="cilindrico__esquerdo"class="font__label">Grau cilindrico do olho esquerdo</label>
+                  <input type="number" class="form-control largura__input" id="cilindrico__esquerdo" name="cilindrico__esquerdo" placeholder="Digite o número do seu grau cilíndrico">
+              </div><br>
+              <div class="col">
+                  <label for="cilindrico__direito" class="font__label">Grau cilindrico do olho direito</label>
+                  <input type="number" class="form-control largura__input" id="cilindrico__direito" name="cilindrico__direito" placeholder="Digite o número do seu grau cilíndrico">
+              </div>
+          </div>  
+          <div class="container container-button">
+              <button type="button" class="btn btn-primary btn-rounded" id="enter"><i class="fas fa-calculator"></i> Calcular</button>
+              
+              <button type="reset" class="btn btn-dark btn-rounded" value="limpar" id="reset"><i class="fas fa-trash"></i> Limpar</button>
+          </div>
+      </div> 
+      <div class="alert alert-success" role="alert"  id="div__oculta">
+        <span class="border">Sua lente tem que ser Focus</span>
+      </div>    
+  </div>  
+  
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2022 Copyright:
+        <a href="https://github.com/kemuelkesley" target="_blank"> KemSoftware</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    
+    <script src="./js/script.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
