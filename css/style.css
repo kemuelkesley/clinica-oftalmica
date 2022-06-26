@@ -51,11 +51,17 @@ p{
     padding-bottom: 10px;
     font-size: 15px;
     
-    
 }
+
+
 
 .font__label:hover{
     font-weight: bold;
+    transition: 3ms;
+    font-size: 15px;
+    
+    /* -webkit-transform: scale(0.95);
+    transform: scale(0.95); */
 }
 
 .container-bord{
@@ -72,14 +78,12 @@ p{
 }
 
 #enter{
-    
     font-size: 13px;
     margin-top: 25px;
     
 }
 
 #reset{
-    
     font-size: 13px;
     margin-top: 25px;
 }

@@ -47,9 +47,6 @@ function limparCampos(){
         esfericoDireito.value = '';
         cilindricoEsquerdo.value = '';
         cilindricoDireito.value = '';
-        
-       
-        console.log('campos resetados com sucesso.')
          
         divInvisivelBotaoLimpar();
        
@@ -70,7 +67,6 @@ function divInvisivelBotaoLimpar(){
         esconderCampo.style.display = 'none'
     }
 }
-
 
 
 // Chamando Funcões
