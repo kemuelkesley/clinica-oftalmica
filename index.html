@@ -43,11 +43,11 @@
               <div class="col">
                   <p>Insira abaixo o seu grau esférico</p>  
                   <label for="esferico__esquerdo" class="font__label">Grau esférico do olho esquerdo</label>
-                  <input type="number" class="form-control largura__input" id="esferico__esquerdo" name="esferico__esquerdo" placeholder="Digite o número do seu grau esférico">
+                  <input type="number" class="form-control largura__input" id="esferico__esquerdo" name="esferico__esquerdo"  min="0" max="14.01" maxlength="4" step="0.01" placeholder="Digite o número do seu grau esférico">
               </div><br>
-              <div class="">
+              <div class="col">
                   <label for="esferico__direito" class="font__label">Grau esférico do olho direito</label>
-                  <input type="number" class="form-control largura__input" id="esferico__direito" name="esferico__direito" placeholder="Digite o número do seu grau esférico">
+                  <input type="number" class="form-control largura__input" id="esferico__direito" name="esferico__direito"  min="0" max="14.01" maxlength="4" step="0.01" placeholder="Digite o número do seu grau esférico">
               </div>
           </div>
 
@@ -55,11 +55,11 @@
               <div class="col">
                   <p>Insira abaixo o seu grau cilíndrico</p>
                   <label for="cilindrico__esquerdo"class="font__label">Grau cilindrico do olho esquerdo</label>
-                  <input type="number" class="form-control largura__input" id="cilindrico__esquerdo" name="cilindrico__esquerdo" placeholder="Digite o número do seu grau cilíndrico">
+                  <input type="number" class="form-control largura__input" id="cilindrico__esquerdo" name="cilindrico__esquerdo" min="0" max="14.01" maxlength="4" step="0.01" placeholder="Digite o número do seu grau cilíndrico">
               </div><br>
               <div class="col">
                   <label for="cilindrico__direito" class="font__label">Grau cilindrico do olho direito</label>
-                  <input type="number" class="form-control largura__input" id="cilindrico__direito" name="cilindrico__direito" placeholder="Digite o número do seu grau cilíndrico">
+                  <input type="number" class="form-control largura__input" id="cilindrico__direito" name="cilindrico__direito" min="0" max="14.01" maxlength="4" step="0.01" placeholder="Digite o número do seu grau cilíndrico">
               </div>
           </div>  
           <div class="container container-button">
@@ -67,10 +67,11 @@
               
               <button type="reset" class="btn btn-dark btn-rounded" value="limpar" id="reset"><i class="fas fa-trash"></i> Limpar</button>
           </div>
+          <br>
+          <div class="alert alert-success" role="alert"  id="div__oculta">
+            <span class="border">Sua lente tem que ser Focus</span>
+          </div>    
       </div> 
-      <div class="alert alert-success" role="alert"  id="div__oculta">
-        <span class="border">Sua lente tem que ser Focus</span>
-      </div>    
   </div>  
   
     
@@ -87,7 +88,9 @@
     <!-- Footer -->
 
     
+    
     <script src="./js/script.js"></script>
+    <script src="./js/fields-inputs.js"></script>
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Custom scripts -->
